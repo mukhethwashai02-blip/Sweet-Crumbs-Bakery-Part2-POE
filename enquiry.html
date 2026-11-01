@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Order Enquiry | Sweet Crumbs Bakery</title>
+    <meta name="description" content="Enquire about cakes, fresh bread, pastries and custom bakery orders at Sweet Crumbs Bakery in Johannesburg.">
+    <meta name="keywords" content="bakery order enquiry, order cakes, bread, pastries, Johannesburg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+
+<body bgcolor="#fffaf0" text="#3b1f1f">
+
+<!-- HEADER -->
+<table width="100%" bgcolor="#7b1734" cellpadding="15">
+    <tr>
+        <td align="center">
+            <font face="Georgia" size="6" color="white">
+                <b>Sweet Crumbs Bakery</b>
+            </font>
+            <br>
+            <font face="Arial" size="3" color="#f8dfc5">
+                Freshly Baked With Love
+            </font>
+        </td>
+    </tr>
+</table>
+
+<!-- MENU -->
+<table width="100%" bgcolor="#fff4e0" cellpadding="12">
+    <tr align="center">
+
+        <td><a href="index.html">
+            <font face="Arial" color="#7b1734"><b>HOME</b></font>
+        </a></td>
+
+        <td><a href="about.html">
+            <font face="Arial" color="#7b1734"><b>ABOUT US</b></font>
+        </a></td>
+
+        <td><a href="services.html">
+            <font face="Arial" color="#7b1734"><b>MENU</b></font>
+        </a></td>
+
+        <td><a href="enquiry.html">
+            <font face="Arial" color="#7b1734"><b>ORDER NOW</b></font>
+        </a></td>
+
+        <td><a href="contact.html">
+            <font face="Arial" color="#7b1734"><b>CONTACT</b></font>
+        </a></td>
+
+    </tr>
+</table>
+
+<br><br>
+
+<!-- ORDER TITLE -->
+<table width="80%" align="center">
+    <tr>
+        <td align="center">
+
+            <font face="Georgia" size="7" color="#7b1734">
+                <b>Order Now</b>
+            </font>
+
+            <br><br>
+
+            <font face="Arial" size="4">
+                Complete the form below to enquire about your order.
+            </font>
+
+        </td>
+    </tr>
+</table>
+
+<br><br>
+
+
+<!-- ORDER FORM -->
+<form id="orderForm">
+
+<table width="70%" align="center" bgcolor="#f1d4b3" cellpadding="15">
+
+    <tr>
+        <td><b>Full Name:</b></td>
+        <td>
+            <input type="text" id="fullname" name="fullname"
+                   size="40" required minlength="2">
+        </td>
+    </tr>
+
+    <tr>
+        <td><b>Email:</b></td>
+        <td>
+            <input type="email" id="orderEmail" name="email"
+                   size="40" required>
+        </td>
+    </tr>
+
+    <tr>
+        <td><b>Phone Number:</b></td>
+        <td>
+            <input type="tel" id="phone" name="phone"
+                   size="40" pattern="0[0-9]{9}"
+                   title="Enter a 10-digit phone number starting with 0"
+                   required>
+        </td>
+    </tr>
+
+    <tr>
+        <td><b>Select Product:</b></td>
+        <td>
+            <select id="product" name="product" required>
+                <option value="">Select a product</option>
+                <option value="Cake">Cake - R180</option>
+                <option value="Fresh Bread">Fresh Bread - R25</option>
+                <option value="Pastries">Pastries - R20</option>
+                <option value="Custom Order">Custom Order</option>
+            </select>
+        </td>
+    </tr>
+
+    <tr>
+        <td><b>Quantity:</b></td>
+        <td>
+            <input type="number" id="quantity" name="quantity"
+                   min="1" required>
+        </td>
+    </tr>
+
+    <tr>
+        <td><b>Collection Location:</b></td>
+        <td>
+            <select id="location" name="location" required>
+                <option value="">Select location</option>
+                <option value="Rosebank">Rosebank</option>
+                <option value="Sandton">Sandton</option>
+            </select>
+        </td>
+    </tr>
+
+    <tr>
+        <td><b>Order Date:</b></td>
+        <td>
+            <input type="date" id="orderDate" name="date" required>
+        </td>
+    </tr>
+
+    <tr>
+        <td><b>Additional Information:</b></td>
+        <td>
+            <textarea id="orderMessage" name="message"
+                      rows="6" cols="40"></textarea>
+        </td>
+    </tr>
+
+    <tr>
+        <td colspan="2" align="center">
+            <input type="submit" value="SUBMIT ORDER">
+            &nbsp;&nbsp;
+            <input type="reset" value="CLEAR">
+        </td>
+    </tr>
+
+    <tr>
+        <td colspan="2" align="center">
+            <p id="orderResponse" role="status" aria-live="polite"></p>
+        </td>
+    </tr>
+
+</table>
+
+</form>
+
+
+<br><br>
+
+<!-- FOOTER -->
+<table width="100%" bgcolor="#7b1734" cellpadding="20">
+    <tr>
+        <td align="center">
+            <font face="Arial" color="white">
+                <b>Sweet Crumbs Bakery</b>
+                <br>
+                © 2026 Sweet Crumbs Bakery
+            </font>
+        </td>
+    </tr>
+</table>
+
+</body>
+</html>

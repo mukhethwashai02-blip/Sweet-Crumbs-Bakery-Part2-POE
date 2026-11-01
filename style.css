@@ -1,0 +1,262 @@
+/* Part 2 - Sweet Crumbs Bakery */
+
+/* Basic reset */
+* {
+    box-sizing: border-box;
+}
+
+/* Base style */
+body {
+    margin: 0;
+    background-color: #fffaf0;
+    color: #3b1f1f;
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Headings */
+h1,
+h2,
+h3 {
+    font-family: Georgia, serif;
+    color: #7b1734;
+}
+
+/* Links */
+a {
+    color: #7b1734;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Make images responsive */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Responsive tables */
+table {
+    max-width: 100%;
+}
+
+/* Navigation links */
+nav a {
+    text-decoration: none;
+}
+
+/* Forms */
+input,
+select,
+textarea {
+    max-width: 100%;
+}
+
+/* Desktop layout for product/menu tables */
+@media (min-width: 901px) {
+
+    .desktop-layout {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+
+    body {
+        font-size: 1rem;
+    }
+
+    table {
+        width: 90% !important;
+    }
+
+    td {
+        padding: 1rem !important;
+    }
+
+    img {
+        width: auto;
+        max-width: 100%;
+        height: auto;
+    }
+
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+
+    body {
+        font-size: 0.95rem;
+    }
+
+    table {
+        width: 95% !important;
+    }
+
+    /* Change multi-column tables into one column */
+    table,
+    tbody,
+    tr,
+    td {
+        display: block;
+        width: 100% !important;
+    }
+
+    td {
+        margin-bottom: 1rem;
+    }
+
+    img {
+        width: 100% !important;
+        max-width: 100%;
+        height: auto !important;
+    }
+
+    input,
+    select,
+    textarea {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    iframe {
+        width: 100%;
+        max-width: 100%;
+    }
+
+}
+.product-layout {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+@media (max-width: 900px) {
+
+    .product-layout {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+@media (max-width: 600px) {
+
+    .product-layout {
+        grid-template-columns: 1fr;
+    }
+
+}
+.about-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+@media (max-width: 900px) {
+
+    .about-layout {
+        grid-template-columns: 1fr;
+    }
+
+}
+.contact-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+@media (max-width: 900px) {
+
+    .contact-layout {
+        grid-template-columns: 1fr;
+    }
+
+}
+form {
+    max-width: 100%;
+}
+
+input,
+select,
+textarea {
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    padding: 0.5rem;
+}
+
+textarea {
+    max-width: 100%;
+}
+form {
+    max-width: 100%;
+}
+
+
+/* Part 3 - Gallery Lightbox */
+
+.product-layout img {
+    cursor: pointer;
+}
+
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.lightbox img {
+    max-width: 90%;
+    max-height: 80%;
+    width: auto !important;
+    height: auto !important;
+    object-fit: contain;
+}
+
+#closeLightbox {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+/* Part 3 - Interactive FAQ */
+
+.bakery-faq {
+    width: 90%;
+    max-width: 800px;
+    margin: 30px auto;
+    font-family: Arial, sans-serif;
+}
+
+.bakery-faq h2 {
+    text-align: center;
+}
+
+.bakery-faq details {
+    background-color: #f1d4b3;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.bakery-faq summary {
+    color: #7b1734;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.bakery-faq p {
+    margin-bottom: 0;
+}

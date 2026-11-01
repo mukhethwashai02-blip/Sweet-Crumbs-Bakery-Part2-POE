@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <title>Bakery Menu | Cakes, Bread and Pastries | Sweet Crumbs</title>
+    <meta name="description" content="Explore our bakery menu, including chocolate cake, fresh bread and pastries. View prices and enquire about your order.">
+    <meta name="keywords" content="bakery menu, chocolate cake, fresh bread, pastries, bakery prices">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+
+<body bgcolor="#fffaf0" text="#3b1f1f">
+
+<!-- HEADER -->
+<table width="100%" bgcolor="#7b1734" cellpadding="15">
+    <tr>
+        <td align="center">
+            <font face="Georgia" size="6" color="white">
+                <b>Sweet Crumbs Bakery</b>
+            </font>
+            <br>
+            <font face="Arial" size="3" color="#f8dfc5">
+                Freshly Baked With Love
+            </font>
+        </td>
+    </tr>
+</table>
+
+<!-- MENU -->
+<table width="100%" bgcolor="#fff4e0" cellpadding="12">
+    <tr align="center">
+
+        <td><a href="index.html">
+            <font face="Arial" color="#7b1734"><b>HOME</b></font>
+        </a></td>
+
+        <td><a href="about.html">
+            <font face="Arial" color="#7b1734"><b>ABOUT US</b></font>
+        </a></td>
+
+        <td><a href="services.html">
+            <font face="Arial" color="#7b1734"><b>MENU</b></font>
+        </a></td>
+
+        <td><a href="enquiry.html">
+            <font face="Arial" color="#7b1734"><b>ORDER NOW</b></font>
+        </a></td>
+
+        <td><a href="contact.html">
+            <font face="Arial" color="#7b1734"><b>CONTACT</b></font>
+        </a></td>
+
+    </tr>
+</table>
+
+<br><br>
+
+<!-- TITLE -->
+<table width="85%" align="center">
+    <tr>
+        <td align="center">
+            <font face="Georgia" size="7" color="#7b1734">
+                <b>Our Menu</b>
+            </font>
+
+            <br>
+
+            <font face="Arial" size="4">
+                Choose from our selection of freshly baked products.
+            </font>
+        </td>
+    </tr>
+</table>
+
+<br><br>
+
+<!-- PRODUCT SEARCH -->
+<div style="text-align: center; margin-bottom: 20px;">
+    <label for="productSearch">
+        <b>Search Our Products:</b>
+    </label>
+    <br><br>
+    <input type="text" id="productSearch"
+           placeholder="Search for cakes, bread or pastries">
+    <p id="searchMessage"></p>
+</div>
+
+<!-- MENU ITEMS -->
+
+<table class="product-layout" id="productList" width="90%" align="center" cellpadding="15">
+
+
+    <tr align="center">
+
+        <td width="33%" bgcolor="#f1d4b3">
+            <img src="images/cake.jpg" width="280" height="200"
+     alt="Chocolate cake from Sweet Crumbs Bakery" loading="lazy">
+            <br><br>
+
+            <font face="Georgia" size="5" color="#7b1734">
+                <b>Chocolate Cake</b>
+            </font>
+
+            <br><br>
+
+            <font face="Arial" size="4">
+                Rich chocolate cake suitable for birthdays
+                and special occasions.
+            </font>
+
+            <br><br>
+
+            <font face="Arial" size="4">
+                <b>R180</b>
+            </font>
+        </td>
+
+        <td width="33%" bgcolor="#f1d4b3">
+           <img src="images/bread.jpg" width="280" height="200"
+     alt="Freshly baked bread from Sweet Crumbs Bakery" loading="lazy">>
+            <br><br>
+
+            <font face="Georgia" size="5" color="#7b1734">
+                <b>Fresh Bread</b>
+            </font>
+
+            <br><br>
+
+            <font face="Arial" size="4">
+                Fresh bread baked every morning.
+            </font>
+
+            <br><br>
+
+            <font face="Arial" size="4">
+                <b>R25</b>
+            </font>
+        </td>
+
+        <td width="33%" bgcolor="#f1d4b3">
+            <img src="images/pastries.jpg" width="280" height="200"
+     alt="Fresh pastries from Sweet Crumbs Bakery" loading="lazy">
+            <br><br>
+
+            <font face="Georgia" size="5" color="#7b1734">
+                <b>Pastries</b>
+            </font>
+
+            <br><br>
+
+            <font face="Arial" size="4">
+                Fresh and tasty pastries for breakfast
+                or a quick snack.
+            </font>
+
+            <br><br>
+
+            <font face="Arial" size="4">
+                <b>R20</b>
+            </font>
+        </td>
+
+    </tr>
+
+</table>
+
+<br><br>
+
+<!-- BAKERY SPECIAL -->
+<table width="85%" align="center" bgcolor="#4b211c" cellpadding="25">
+    <tr>
+        <td align="center">
+
+            <font face="Georgia" size="6" color="#fff4e0">
+                <b>Bakery Special</b>
+            </font>
+
+            <br><br>
+
+            <img src="images/bakery.jpg" width="400" height="250">
+
+            <br><br>
+
+            <font face="Arial" size="4" color="white">
+                Ask us about our special cakes and
+                custom orders.
+            </font>
+
+            <br><br>
+
+            <a href="enquiry.html">
+                <font face="Arial" size="4" color="#f1d4b3">
+                    <b>ORDER NOW</b>
+                </font>
+            </a>
+
+        </td>
+    </tr>
+</table>
+
+<!-- PART 3 - FREQUENTLY ASKED QUESTIONS -->
+<section class="bakery-faq">
+    <h2>Frequently Asked Questions</h2>
+
+    <details>
+        <summary>Can I place a custom cake order?</summary>
+        <p>Yes. You can use our Order Now page to enquire about a custom cake.</p>
+    </details>
+
+    <details>
+        <summary>Where can I collect my order?</summary>
+        <p>You can request collection in Rosebank or Sandton.</p>
+    </details>
+
+    <details>
+        <summary>How much do your products cost?</summary>
+        <p>Our chocolate cake costs R180, fresh bread costs R25 and pastries cost R20. Custom order prices must be confirmed.</p>
+    </details>
+
+    <details>
+        <summary>Is my order confirmed when I submit the form?</summary>
+        <p>No. The form provides an estimated price. The bakery must confirm availability and your order.</p>
+    </details>
+</section>
+
+<br><br>
+
+<!-- FOOTER -->
+<table width="100%" bgcolor="#7b1734" cellpadding="20">
+    <tr>
+        <td align="center">
+            <font face="Arial" color="white">
+                <b>Sweet Crumbs Bakery</b>
+                <br>
+                © 2026 Sweet Crumbs Bakery
+            </font>
+        </td>
+    </tr>
+</table>
+
+<!-- IMAGE LIGHTBOX -->
+<div id="lightbox" class="lightbox">
+    <span id="closeLightbox">&times;</span>
+    <img id="largeImage" alt="Enlarged bakery product">
+</div>
+
+</body>
+</html>
