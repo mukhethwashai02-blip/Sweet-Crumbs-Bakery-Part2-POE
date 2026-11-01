@@ -1,5 +1,7 @@
 
+
 User-agent: *
 Allow: /
 
-Sitemap: https://YOUR-WEBSITE-URL/sitemap.xml
+Sitemap: https://mukhethwashai02-blip.github.io/Sweet-Crumbs-Bakery-Part2-POE/sitemap.xml
+
